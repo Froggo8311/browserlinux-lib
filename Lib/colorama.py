@@ -26,46 +26,46 @@ class AnsiCursor(AnsiCodes):
   pass
 
 class AnsiFore(AnsiCodes):
-  BLACK           = color("", "black", "none").rstrip("</div>")
-  RED             = color("", "red", "none").rstrip("</div>")
-  GREEN           = color("", "green", "none").rstrip("</div>")
-  YELLOW          = color("", "yellow", "none").rstrip("</div>")
-  BLUE            = color("", "blue", "none").rstrip("</div>")
-  MAGENTA         = color("", "purple", "none").rstrip("</div>")
-  CYAN            = color("", "lightblue", "none").rstrip("</div>")
-  WHITE           = color("", "white", "none").rstrip("</div>")
+  BLACK           = color("", "black", "none")[-6:]
+  RED             = color("", "red", "none")[-6:]
+  GREEN           = color("", "green", "none")[-6:]
+  YELLOW          = color("", "yellow", "none")[-6:]
+  BLUE            = color("", "blue", "none")[-6:]
+  MAGENTA         = color("", "purple", "none")[-6:]
+  CYAN            = color("", "lightblue", "none")[-6:]
+  WHITE           = color("", "white", "none")[-6:]
   RESET           = "</div>"
 
   # These are fairly well supported, but not part of the standard.
-  LIGHTBLACK_EX   = color("", "trublack", "none").rstrip("</div>")
-  LIGHTRED_EX     = color("", "red", "none").rstrip("</div>")
-  LIGHTGREEN_EX   = color("", "lightgreen", "none").rstrip("</div>")
-  LIGHTYELLOW_EX  = color("", "yellow", "none").rstrip("</div>")
-  LIGHTBLUE_EX    = color("", "blue", "none").rstrip("</div>")
-  LIGHTMAGENTA_EX = color("", "violet", "none").rstrip("</div>")
-  LIGHTCYAN_EX    = color("", "lightblue", "none").rstrip("</div>")
-  LIGHTWHITE_EX   = color("", "truwhite", "none").rstrip("</div>")
+  LIGHTBLACK_EX   = color("", "trublack", "none")[-6:]
+  LIGHTRED_EX     = color("", "red", "none")[-6:]
+  LIGHTGREEN_EX   = color("", "lightgreen", "none")[-6:]
+  LIGHTYELLOW_EX  = color("", "yellow", "none")[-6:]
+  LIGHTBLUE_EX    = color("", "blue", "none")[-6:]
+  LIGHTMAGENTA_EX = color("", "violet", "none")[-6:]
+  LIGHTCYAN_EX    = color("", "lightblue", "none")[-6:]
+  LIGHTWHITE_EX   = color("", "truwhite", "none")[-6:]
 
 class AnsiBack(AnsiCodes):
-  BLACK           = color("", "none", "black").rstrip("</div>")
-  RED             = color("", "none", "red").rstrip("</div>")
-  GREEN           = color("", "none", "green").rstrip("</div>")
-  YELLOW          = color("", "none", "yellow").rstrip("</div>")
-  BLUE            = color("", "none", "blue").rstrip("</div>")
-  MAGENTA         = color("", "none", "purple").rstrip("</div>")
-  CYAN            = color("", "none", "lightblue").rstrip("</div>")
-  WHITE           = color("", "none", "white").rstrip("</div>")
+  BLACK           = color("", "none", "black")[-6:]
+  RED             = color("", "none", "red")[-6:]
+  GREEN           = color("", "none", "green")[-6:]
+  YELLOW          = color("", "none", "yellow")[-6:]
+  BLUE            = color("", "none", "blue")[-6:]
+  MAGENTA         = color("", "none", "purple")[-6:]
+  CYAN            = color("", "none", "lightblue")[-6:]
+  WHITE           = color("", "none", "white")[-6:]
   RESET           = "</div>"
 
   # These are fairly well supported, but not part of the standard.
-  LIGHTBLACK_EX   = color("", "none", "trublack").rstrip("</div>")
-  LIGHTRED_EX     = color("", "none", "red").rstrip("</div>")
-  LIGHTGREEN_EX   = color("", "none", "lightgreen").rstrip("</div>")
-  LIGHTYELLOW_EX  = color("", "none", "yellow").rstrip("</div>")
-  LIGHTBLUE_EX    = color("", "none", "blue").rstrip("</div>")
-  LIGHTMAGENTA_EX = color("", "none", "violet").rstrip("</div>")
-  LIGHTCYAN_EX    = color("", "none", "lightblue").rstrip("</div>")
-  LIGHTWHITE_EX   = color("", "none", "truwhite").rstrip("</div>")
+  LIGHTBLACK_EX   = color("", "none", "trublack")[-6:]
+  LIGHTRED_EX     = color("", "none", "red")[-6:]
+  LIGHTGREEN_EX   = color("", "none", "lightgreen")[-6:]
+  LIGHTYELLOW_EX  = color("", "none", "yellow")[-6:]
+  LIGHTBLUE_EX    = color("", "none", "blue")[-6:]
+  LIGHTMAGENTA_EX = color("", "none", "violet")[-6:]
+  LIGHTCYAN_EX    = color("", "none", "lightblue")[-6:]
+  LIGHTWHITE_EX   = color("", "none", "truwhite")[-6:]
 
 
 class AnsiStyle(AnsiCodes):
