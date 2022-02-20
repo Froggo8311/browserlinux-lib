@@ -22,6 +22,9 @@ class AnsiCodes(object):
   def __init__(self):
     pass
 
+class AnsiCursor(AnsiCodes):
+  pass
+
 class AnsiFore(AnsiCodes):
   BLACK           = color("", "black", "none").rstrip("</div>")
   RED             = color("", "red", "none").rstrip("</div>")
