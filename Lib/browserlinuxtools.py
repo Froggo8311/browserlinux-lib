@@ -16,7 +16,7 @@ class blpm():
     _window.cmd_blpm("purge "+" ".join(map(str, packages)))
 
   def list():
-    return _window.usr_bin.keys()
+    return dict(_window.usr_bin).keys()
 
   def listremote():
     return _json.loads(_os.open("/blpm-listall", "r").read()).keys()
