@@ -19,7 +19,7 @@ class blpm():
     return _window.usr_bin.keys()
 
   def listremote():
-    return _json.loads(_os.open("/blpm-listall").read()).split(" ")
+    return _json.loads(_os.open("/blpm-listall", "r").read()).split(" ")
 
   addCommandFromVMSH    = _window.addCommandFromVMSH
   addCommandFromJS      = _window.addCommandFromJS
