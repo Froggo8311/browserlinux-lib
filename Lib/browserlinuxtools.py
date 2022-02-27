@@ -16,10 +16,10 @@ class blpm():
     _window.cmd_blpm("purge "+" ".join(map(str, packages)))
 
   def list():
-    return dict(_window.usr_bin).keys()
+    return _window.usr_bin.keys()
 
   def listremote():
-    return _json.loads(_os.open("/blpm-listall", "r").read()).keys()
+    return _json.loads(os.open("/blpm-listall")).split(" ")
 
   addCommandFromVMSH    = _window.addCommandFromVMSH
   addCommandFromJS      = _window.addCommandFromJS
